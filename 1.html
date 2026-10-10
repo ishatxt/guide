@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 SSLC · Chapter Summaries</title>
+  <!-- Google Font & simple CSS reset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f7f5f0;
+      color: #1e1e1e;
+      line-height: 1.5;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* header / section title */
+    .section-header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .section-header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1e1e1e;
+      display: inline-block;
+      border-bottom: 3px solid #b8860b;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-header .subhead {
+      font-size: 1rem;
+      color: #5a5a5a;
+      margin-top: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    /* card grid */
+    .summary-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    /* block / card */
+    .card {
+      flex: 1 1 300px;
+      max-width: 380px;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.03);
+      padding: 2rem 1.8rem 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #eae7e0;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 32px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    /* block title */
+    .card h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0.3rem;
+      color: #0f0f0f;
+      letter-spacing: -0.01em;
+    }
+
+    /* author / subtitle */
+    .card .author {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #b8860b;
+      margin-bottom: 1rem;
+      border-left: 3px solid #b8860b;
+      padding-left: 0.75rem;
+    }
+
+    /* summary preview (concise 2-3 lines) */
+    .card .summary-preview {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      margin-bottom: 1.8rem;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.6;
+    }
+
+    /* download button */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #1e1e1e;
+      color: #ffffff;
+      border: none;
+      border-radius: 60px;
+      padding: 1rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-top: auto;
+      width: 100%;
+      border: 1px solid #2b2b2b;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .download-btn:hover {
+      background: #b8860b;
+      border-color: #b8860b;
+      box-shadow: 0 8px 18px rgba(184, 134, 11, 0.25);
+    }
+
+    .download-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* icon (simple svg) */
+    .download-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* small note / footer */
+    .footer-note {
+      text-align: center;
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+      color: #8b8b8b;
+      border-top: 1px solid #e0dbd2;
+      padding-top: 1.8rem;
+    }
+
+    /* responsive */
+    @media (max-width: 640px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+
+      .section-header h1 {
+        font-size: 1.8rem;
+      }
+
+      .card {
+        padding: 1.8rem 1.5rem;
+      }
+
+      .card h2 {
+        font-size: 1.4rem;
+      }
+
+      .download-btn {
+        padding: 0.9rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- chapter summary section -->
+    <div class="section-header">
+      <h1>i++ English Chapter Summary</h1>
+      <div class="subhead">Three literary voices — compassion, war, and the weight of a string</div>
+    </div>
+
+    <!-- 3 blocks: another day in paradise, war, piece of string -->
+    <div class="summary-grid">
+      
+      <!-- block 1: Another Day in Paradise -->
+      <div class="card">
+        <h2>Another Day in Paradise</h2>
+        <div class="author">Phil Collins</div>
+        <div class="summary-preview">
+          A homeless woman freezing on a city street reaches out for help, but a well-dressed passerby pretends not to hear. The song contrasts everyday comfort with absolute despair, urging us to think twice before ignoring the poor.
+        </div>
+        <button class="download-btn" data-file="1" aria-label="Download Another Day in Paradise summary">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path d="M12 16L6 10H10V4H14V10H18L12 16ZM4 18H20V20H4V18Z" fill="currentColor"/>
+          </svg>
+          Download PDF
+        </button>
+      </div>
+
+      <!-- block 2: War -->
+      <div class="card">
+        <h2>War</h2>
+        <div class="author">Luigi Pirandello</div>
+        <div class="summary-preview">
+          In a WWI railway carriage, parents argue over whose grief is greatest. An old patriot claims young soldiers die happily for their country — until a mother's simple question shatters his defences.
+        </div>
+        <button class="download-btn" data-file="2" aria-label="Download War summary">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path d="M12 16L6 10H10V4H14V10H18L12 16ZM4 18H20V20H4V18Z" fill="currentColor"/>
+          </svg>
+          Download PDF
+        </button>
+      </div>
+
+      <!-- block 3: A Piece of String -->
+      <div class="card">
+        <h2>A Piece of String</h2>
+        <div class="author">Guy de Maupassant</div>
+        <div class="summary-preview">
+          A thrifty peasant picks up a worthless piece of string — and is falsely accused of stealing a pocketbook. Even after the truth emerges, the community refuses to believe him, breaking his spirit.
+        </div>
+        <button class="download-btn" data-file="3" aria-label="Download A Piece of String summary">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path d="M12 16L6 10H10V4H14V10H18L12 16ZM4 18H20V20H4V18Z" fill="currentColor"/>
+          </svg>
+          Download PDF
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Class 10 SSLC · Chapter summaries · Press download to get the PDF
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // Map file numbers to actual filenames (matching your request)
+      const fileMap = {
+        1: '/home/i/Desktop/english-notes/pdf/1.pdf',   // another day in paradise
+        2: '/home/i/Desktop/english-notes/pdf/2.pdf',   // war
+        3: '/home/i/Desktop/english-notes/pdf/3.pdf'    // a piece of string (note: filename "3.pdf")
+      };
+
+      // Attach download logic to all buttons with data-file attribute
+      const buttons = document.querySelectorAll('.download-btn[data-file]');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+          event.preventDefault();  // prevent any default (though button has no default)
+          
+          const fileId = this.dataset.file;  // "1", "2", or "3"
+          const fileName = fileMap[fileId];
+          
+          if (!fileName) {
+            console.warn('No file mapped for id:', fileId);
+            return;
+          }
+
+          // Create a temporary anchor to trigger download
+          const link = document.createElement('a');
+          link.href = fileName;                // relative path — same folder as HTML
+          link.download = fileName;            // download attribute with filename
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
